@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">🚀 Mi Landing</h1>
+      <nav>
+        <a href="#features" class="mx-3 hover:text-blue-600">Características</a>
+        <a href="#contact" class="mx-3 hover:text-blue-600">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl font-extrabold mb-4">Bienvenido a mi Landing Page</h2>
+    <p class="text-lg mb-6">Una página simple, rápida y lista para publicar con GitHub Pages.</p>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-gray-100">
+      ¡Quiero más info!
+    </a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8 text-center">
+    <div class="bg-white shadow-lg p-6 rounded-2xl">
+      <h3 class="font-bold text-xl mb-2">⚡ Rápido</h3>
+      <p>Diseño ligero y cargado con TailwindCSS desde CDN.</p>
+    </div>
+    <div class="bg-white shadow-lg p-6 rounded-2xl">
+      <h3 class="font-bold text-xl mb-2">🌍 Gratis</h3>
+      <p>Hospedado en GitHub Pages con tu propio dominio.</p>
+    </div>
+    <div class="bg-white shadow-lg p-6 rounded-2xl">
+      <h3 class="font-bold text-xl mb-2">🔒 Seguro</h3>
+      <p>HTTPS automático gracias a GitHub y Let's Encrypt.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contáctame</h2>
+      <form action="https://formspree.io/f/tu-form-id" method="POST" class="space-y-4">
+        <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-3 rounded-lg border">
+        <input type="email" name="email" placeholder="Tu correo" required class="w-full p-3 rounded-lg border">
+        <textarea name="mensaje" rows="4" placeholder="Tu mensaje" class="w-full p-3 rounded-lg border"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 mt-10 shadow-inner">
+    <p>© 2025 Mi Landing. Hecho con ❤️ en GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
