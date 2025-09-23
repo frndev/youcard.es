@@ -3,67 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi App de Beneficios</title>
+  <title>Landing App</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="font-bold text-lg text-indigo-600">MiApp</div>
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#preview" class="hover:text-indigo-600">Preview</a></li>
+        <li><a href="#breakdown" class="hover:text-indigo-600">Breakdown</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero -->
-  <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-    <div class="max-w-6xl mx-auto px-6 py-16 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Acumula puntos y canjea beneficios</h1>
-      <p class="text-lg md:text-xl mb-6">Tu app para ahorrar, canjear y disfrutar en tus establecimientos favoritos.</p>
-      <a href="#download" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Descargar la App</a>
+  <section id="home" class="pt-28 pb-20 bg-gray-100 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to our app <span class="text-indigo-600">ECOSYSTEM</span></h1>
+    <p class="max-w-xl mx-auto mb-8">Una app para acumular puntos, canjear beneficios y disfrutar de promociones exclusivas.</p>
+    <div class="flex justify-center gap-6">
+      <img src="https://via.placeholder.com/250x500" class="rounded-xl shadow-lg" alt="App Mockup">
+      <img src="https://via.placeholder.com/400x250" class="rounded-xl shadow-lg hidden md:block" alt="Tablet Mockup">
     </div>
-  </header>
+  </section>
 
-  <!-- Features -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold text-center mb-12">¿Cómo funciona?</h2>
-    <div class="grid gap-10 md:grid-cols-3 text-center">
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <div class="text-indigo-600 text-4xl mb-4">⭐</div>
-        <h3 class="text-xl font-semibold mb-2">Acumula puntos</h3>
-        <p>Gana puntos en cada compra que realices en establecimientos afiliados.</p>
-      </div>
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <div class="text-purple-600 text-4xl mb-4">🎁</div>
-        <h3 class="text-xl font-semibold mb-2">Canjea beneficios</h3>
-        <p>Usa tus puntos para canjear descuentos y promociones exclusivas.</p>
-      </div>
-      <div class="p-6 bg-white rounded-2xl shadow">
-        <div class="text-indigo-600 text-4xl mb-4">📊</div>
-        <h3 class="text-xl font-semibold mb-2">Consulta tu historial</h3>
-        <p>Accede a todas tus transacciones y canjes en tiempo real.</p>
+  <!-- Preview -->
+  <section id="preview" class="bg-indigo-600 text-white py-20">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10 px-6">
+      <img src="https://via.placeholder.com/250x500" class="rounded-xl shadow-lg mx-auto" alt="Phone Preview">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Epic content and great discovery system</h2>
+        <p class="mb-6">Descubre promociones, consulta tus puntos y canjea beneficios fácilmente.</p>
+        <div class="flex gap-4">
+          <a href="#" class="bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg">App Store</a>
+          <a href="#" class="bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg">Web App</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Mockup -->
-  <section class="bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
-      <img src="https://via.placeholder.com/300x600.png?text=App+Preview" alt="App Mockup" class="rounded-2xl shadow-lg mx-auto">
-      <div class="flex-1">
-        <h2 class="text-3xl font-bold mb-4">Todo lo que necesitas en un solo lugar</h2>
-        <p class="mb-6">Con nuestra app podrás llevar el control de tus puntos, encontrar beneficios cercanos y disfrutar de recompensas exclusivas.</p>
-        <a href="#download" class="bg-indigo-600 text-white px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition">Empieza ahora</a>
+  <!-- Breakdown -->
+  <section id="breakdown" class="bg-green-500 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Epic content in all its shapes and sizes</h2>
+        <p class="mb-6">Historial de transacciones, acumulación de puntos y más funciones en una sola app.</p>
+        <ul class="space-y-3">
+          <li>⭐ Acumula puntos en tus compras</li>
+          <li>🎁 Canjea beneficios exclusivos</li>
+          <li>📊 Consulta tu historial al instante</li>
+        </ul>
       </div>
+      <img src="https://via.placeholder.com/400x250" class="rounded-xl shadow-lg" alt="Feature Cards">
     </div>
   </section>
 
-  <!-- Download CTA -->
-  <section id="download" class="text-center py-16">
-    <h2 class="text-3xl font-bold mb-4">Descárgala gratis</h2>
-    <p class="mb-6">Disponible en iOS y Android.</p>
-    <div class="flex justify-center gap-4">
-      <a href="#" class="bg-black text-white px-6 py-3 rounded-lg">App Store</a>
-      <a href="#" class="bg-black text-white px-6 py-3 rounded-lg">Google Play</a>
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-800 text-gray-300 py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get in touch</h2>
+      <p class="mb-6">¿Tienes dudas o quieres más información? Contáctanos:</p>
+      <div class="grid md:grid-cols-2 gap-10 text-left">
+        <div>
+          <h3 class="font-semibold">Oficina Madrid</h3>
+          <p>Calle Ejemplo 123, 28000 Madrid</p>
+          <p>Email: contacto@miapp.com</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Oficina Ciudad de México</h3>
+          <p>Avenida Reforma 456, CDMX</p>
+          <p>Email: soporte@miapp.com</p>
+        </div>
+      </div>
+      <div class="mt-8 flex justify-center gap-6">
+        <a href="#" class="hover:text-white">Twitter</a>
+        <a href="#" class="hover:text-white">Facebook</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 text-center py-6">
-    <p>&copy; 2025 Mi App de Beneficios. Todos los derechos reservados.</p>
+  <footer class="bg-black text-gray-400 text-center py-6">
+    &copy; 2025 MiApp. Todos los derechos reservados.
   </footer>
 
 </body>
